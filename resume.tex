@@ -1,0 +1,214 @@
+%-------------------------
+% Resume in Latex
+% Author : ahsmha
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \small{#2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & \small{#2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{left}
+    \textbf{\Large \scshape Ahmed Shadaab} \\ \vspace{1pt}
+    \small \href{tel:+918977016552}{+91-897-701-6552} $|$ \href{mailto:ahmedshadaab022@gmail.com}{\underline{ahmedshadaab022@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/ahmed-shadaab}{\underline{linkedin.com/in/ahmed-shadaab}} $|$
+    \href{https://github.com/ahsmha}{\underline{github.com/ahsmha}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National Institute of Technology Srinagar}{\small{India}}
+      {Bachelor of Technology in Computer Science and Engineering}{Aug 2019 -- Jul 2023}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer}{Sep 2023 -- Present}
+      {MAQ Software}{Hyderabad, India}
+      \resumeItemListStart
+        \resumeItem{Optimized SQL queries for improved performance}
+        \resumeItem{Innovatively reduced ETL pipeline time by over \textbf{10\%}}
+        \resumeItem{Developed Power Automate flows for repetitive tasks, saving \textbf{over 5 man-hours daily}}
+        \resumeItem{Conducted comprehensive end-to-end validation using validation pivots and Azure DevOps, ensuring data credibility through staging and mart BVTs}
+        \resumeItem{Collaborated with stakeholders and cross-functional teams to understand business requirements, ensuring timely delivery of data solutions}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Software Engineer Intern}{Jan 2023 -- Aug 2023}
+      {Dotpe}{Remote}
+      \resumeItemListStart
+        \resumeItem{Developed multiple APIs that required working with \textbf{Kafka}, \textbf{Redis}, and other related technologies}
+        \resumeItem{Improved customer support by implementing a chat feature for merchants, leading to drastic reduction in query resolution time}
+        \resumeItem{Implemented link tracking for buttons in WhatsApp messages}
+        \resumeItem{Enhanced platform service by isolating the chatbot from the core infrastructure}
+        \resumeItem{Demonstrated problem-solving skills by resolving several production-level issues, contributing to the overall improvement in system reliability}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Developer Intern}{Jul 2022 -- Aug 2022}
+      {Blockchain Commons}{Remote}
+      \resumeItemListStart
+        \resumeItem{Contributed to the improvement of the TailsOS user experience by developing customizable scripts}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Challenges} $|$ \emph{Golang}}{\href{https://github.com/ahsmha/cc}{\underline{github.com/ahsmha/cc}}}
+          \resumeItemListStart
+            \resumeItem{My attempt at solving popular \href{https://codingchallenges.fyi/challenges/intro}{\underline{coding challenges}} by John Crickett in Golang}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Fserver} $|$ \emph{Golang}}{\href{https://cdn.ahsmha.de}{\underline{cdn.ahsmha.de}}}
+          \resumeItemListStart
+            \resumeItem{A minimal, single-user, \textbf{no-dependency} file server, designed for self-hosting small files online}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Notes} $|$ \emph{Golang, Mysql}}{\href{https://github.com/ahsmha/notes-be}{\underline{github.com/ahsmha/notes-be}}}
+          \resumeItemListStart
+            \resumeItem{A basic notes API server implementation with authentication using \textbf{JWTs}}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Smash} $|$ \emph{C}}{\href{https://github.com/ahsmha/smash}{\underline{github.com/ahsmha/smash}}}
+          \resumeItemListStart
+            \resumeItem{An \textbf{extensible} and most basic C-based shell, features built-in commands (cd, help, exit)}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C/C++, Golang, SQL, JavaScript, HTML/CSS} \\
+     \textbf{Frameworks}{: Svelte, Node.js} \\
+     \textbf{Developer Tools}{: Git, Docker, Microsoft Azure, Kafka, Redis} \\
+     \textbf{Areas of Interest}{: Free Software, Distributed Systems, Linux}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
